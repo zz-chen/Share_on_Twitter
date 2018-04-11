@@ -4,20 +4,67 @@
 <head>
   <script src="js/jquery-2.2.4.min.js"></script>
   <title>Share on Twitter: Options</title>
-  <style> body {font-family: "Open Sans", sans-serif !important;} a {text-decoration: none; color: crimson;} a:visited{color: crimson;} #status {color: red;}</style>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif !important;
+    }
+
+    a {
+      text-decoration: none;
+      color: crimson;
+    }
+
+    a:visited {
+      color: crimson;
+    }
+
+    #status {
+      color: red;
+    }
+  </style>
+  <meta charset="utf8" />
 </head>
 
 <body>
-  <p>Open Sharing Link in: &nbsp;
-    <select id="openas">
-      <option value="popup">Popup Window (Default)</option>
-      <option value="tab">New Tab</option>
-    </select>
-  </p>
-  <p>&nbsp; <span id="status"></span></p>
-  <hr/>
-  <p>Extension by <em>ArpitNext</em>.</p>
+  <table>
+    <tr>
+      <td style="text-align: right">Open Sharing Link in</td>
+      <td>:</td>
+      <td>
+        <select id="openas">
+          <option value="popup">Popup Window (Default)</option>
+          <option value="tab">New Tab</option>
+        </select>
+      </td>
+    </tr>
 
+    <tr>
+      <td style="text-align: right">引用符</td>
+      <td>:</td>
+      <td>
+        <select id="quotationMarks">
+          <option value="">-</option>
+          <option value="“,”">“”</option>
+          <option value="【,】">【】</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="text-align: right">文字数</td>
+      <td>:</td>
+      <td>
+        <select id="charactersCounting">
+          <option value="">-</option>
+          <option value="140">140</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <a id="status"></a>
+  <hr/>
+  <p>Extension by
+    <em>ArpitNext</em>.</p>
   <script src="js/options.js"></script>
 </body>
 
